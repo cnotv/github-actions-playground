@@ -14,5 +14,3 @@ jobs:
     steps:
       - name: random action
         run: echo "Hello :)"
-      - name: status
-        run: nomad node status -self
