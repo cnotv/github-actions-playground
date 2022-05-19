@@ -1,0 +1,14 @@
+name: GitHub Action test 1
+on:
+  push:
+  workflow_dispatch:
+    environment:
+      description: 'Environment to run tests against'
+      type: environment
+      required: true 
+jobs:
+  anything:
+    runs-on: ubuntu-latest
+    steps:
+      - name: random action
+        run: echo "Hello :)"
